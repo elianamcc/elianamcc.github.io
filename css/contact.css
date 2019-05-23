@@ -1,0 +1,25 @@
+/* CONTACT */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    background-color: rgb(44, 44, 44);
+    color: rgb(182, 182, 182);
+    font-size: 18px;
+    font-family: "Playfair Display";
+    letter-spacing: -0.05em;
+    line-height: 1.9em;
+}
+
+.contact__email{
+    font-family: Arial;
+    font-size: 12px;
+    color: rgb(182, 182, 182);
+    letter-spacing: 0.05em;
+    margin-top:10px;
+}
+.contact__email:hover{
+    color: white;
+}

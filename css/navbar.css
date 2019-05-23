@@ -1,0 +1,37 @@
+/* NAVIGATION BAR */
+.navbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height:70px;
+    width:100%;
+    position: fixed;
+    z-index: 99;
+    top:0px;
+    left:0px;
+}
+
+.navbar__title{
+    font-size:16px;
+    font-weight:lighter;
+    position: fixed;
+    left:5%;
+    padding-left:10px;
+}
+
+.navbar__item{
+    font-size: 12px;
+    padding: 0px 15px;
+    color: rgb(182, 182, 182);
+    font-family: 'Playfair Display';
+    letter-spacing: 0.15em;
+}
+.navbar__item:hover{
+    color: black;
+}
+
+.navbar__item--last{
+    padding-right: 5% !important;
+}
+

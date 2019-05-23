@@ -1,0 +1,152 @@
+html{
+    font-family: 'Playfair Display', serif;
+}
+h1,h2{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0px 5%;
+}
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* HEADER --------------------------------------------------*/
+.header{
+    height: 100vh;
+    background-image: url("../images/cover-eli.jpg");
+}
+
+.caption{
+    flex-direction: column;
+    position: absolute;
+    color: white;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+.caption__title{
+    font-size: 45px;
+    font-family: "Roboto Slab";
+    letter-spacing: 0.2em;
+    line-height: 0.9em;
+    font-weight: bold;
+}
+
+.caption__subtitle{
+    font-size: 29px;
+    font-family: "Roboto";
+    letter-spacing: 0.1em;
+    line-height: 2.0em;
+    margin: 10px 0px;
+}
+
+/* ABOUT --------------------------------------------------*/
+.about{
+    height: 350px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about__title{
+    font-size: 20px;
+    font-family: "Playfair Display";
+    letter-spacing: -0.05em;
+    line-height: 1.9em;
+    margin-left: 5%;
+}
+
+.about__info{
+    font-size: 16px;
+    font-family: "Roboto";
+    letter-spacing: 0.1em;
+    line-height: 2.0em;
+    color: rgb(122, 122, 122);
+    margin: 10px 0px;
+    margin-left: 5%;
+}
+
+.about__more{
+    font-family: "Roboto Slab";
+    letter-spacing: 0.0em;
+    line-height: 2.2em;
+    font-size: 12px;
+    color: rgb(89, 89, 89);
+    margin-top: 20px;
+    margin-left: 5%;
+}
+
+/* PROJECTS --------------------------------------------------*/
+.projects{
+    color: white;
+    height: 60vh;
+    background-image: url("../images/yes.jpg");
+    background-color: rgb(129, 129, 129);
+    opacity: 0.75;
+}
+
+.projectsCaption{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+}
+
+.projects__title{
+    font-size: 34px;
+    font-family: "Playfair Display";
+    line-height: 0.9em;
+    letter-spacing: 0.7em;
+    margin-bottom: 10px;
+}
+
+.projects__info{
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    letter-spacing: 0.0em;
+    line-height: 2.2em;
+    margin:20px 25%;
+    min-width:200px;
+}
+
+.projects__button{
+    font-size: 12px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    padding:10px 20px;
+}
+.projects__button:hover{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    .about{
+        height: 400px;
+    }
+    .projects__info {
+        margin: 10px 5%;
+    }
+  }
