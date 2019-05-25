@@ -1,37 +1,6 @@
-html{
-    font-family: 'Playfair Display', serif;
-
-}
-h1,h2{
-    margin: 0px;
-}
-
-a{
-    text-decoration: none;
-}
-
-.flexBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contact{
-    width: 100%;
-}
-
-.container{
-    margin:0px 5%;
-    flex-direction: column;
-}
-
 .pageTitle{
-    font-size: 22px;
-    height: 150px;
-    width: 100%;
-    margin-top: 70px;
-    letter-spacing: -0.05em;
+    margin-bottom: 20px;
 }
-
 .projectCont{
     flex-wrap: wrap;
     align-items: center;

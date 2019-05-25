@@ -1,40 +1,13 @@
-html{
-    font-family: 'Playfair Display', serif;
-}
-h1,h2{
-    margin: 0px;
-}
-
-a{
-    text-decoration: none;
-}
-
-.flexBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    margin:0px 5%;
-    flex-direction: column;
-}
-
-.contact{
-    width: 100%;
-}
-
 .intro{
     flex-direction: column;
     align-items: flex-start;
-    background-color: rgb(237, 237, 237);
     height:75vh;
     width:50%;
+    background-color: rgb(237, 237, 237);
 }
 
 .intro__title{
     font-size: 20px;
-    font-family: "Playfair Display";
     letter-spacing: -0.05em;
     line-height: 1.9em;
     margin: 0px 10% 5% 10%;
@@ -43,15 +16,15 @@ a{
 .intro__info{
     font-size: 16px;
     font-family: "Roboto";
-    color: rgb(122, 122, 122);
     margin: 0 10%;
     letter-spacing: 0.1em;
     line-height: 2.0em;
+    color: rgb(122, 122, 122);
 }
 
 .picture{
-    width:50%;
     height:75vh;
+    width:50%;
     background-image: url("../images/about-eli.jpg")
 }
 
