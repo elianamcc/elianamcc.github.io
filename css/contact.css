@@ -11,6 +11,7 @@
     font-family: "Playfair Display";
     letter-spacing: -0.05em;
     line-height: 1.9em;
+    width: 100%;
 }
 
 .contact__email{
