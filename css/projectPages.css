@@ -19,11 +19,20 @@
     align-items: flex-start;
     font-family: Montserrat;
     font-weight: bold;
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../images/hex/hex.png");
+}
+#hexCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/hex/hex.png");
+}
+#carCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/car/carCover.jpg");
+}
+/*idk why you have to make these id's and not classes but its fiiiiine*/
+#hexCover,#carCover{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center; 
 }
+
 .projectCover__title{
     font-size: 50px;
     letter-spacing: -0.1em;
@@ -78,6 +87,12 @@
 #prototype{
     background-image: url("../images/hex/hexmock2.PNG");
 }
+#mission{
+    background-image: url("../images/car/mission.jpg");
+}
+#working{
+    background-image: url("../images/car/working.jpg");
+}
 
 /*for explanation*/
 .main__info{
@@ -108,3 +123,70 @@
     height: 100%;
 }
 
+
+/* FOR CAR COMPONENTS SECTION */
+.components{
+    width: 100%;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.item,.item__info,.item__image{
+    width: 50%;
+}
+.item{
+    height: 100%;
+    /* align-items: flex-start !important; */
+}
+.itemRow{
+    height:50%;
+    width: 100%;
+    margin: 20px 0;
+}
+.item__image{
+    height:250px;
+    width:250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+#exterior{
+    background-image: url("../images/car/exterior.jpg");
+}
+#windup{
+    background-image: url("../images/car/windup.jpg")
+}
+#piston{
+    background-image: url("../images/car/piston.jpg")
+}
+#base{
+    background-image: url("../images/car/baseframe.jpg")
+}
+
+.item__info--title{
+    font-size: 13px;
+    letter-spacing: -0.05em;
+    line-height: 1.9em;
+    margin-top: 0;
+    padding-left:20px;
+}
+
+.componentText{
+    font-family: "Roboto Slab";
+    font-size: 11px;
+    letter-spacing: 0.0em;
+    line-height: 2.2em;
+    display:inline-block;
+    padding-left:20px;
+}
+
+@media screen and (max-width: 800px){
+    .itemRow{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+        margin: 20px 0px;
+    }
+  }
