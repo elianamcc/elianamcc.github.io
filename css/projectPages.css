@@ -359,10 +359,10 @@
 
 
 @media screen and (max-width: 800px){
-    .itemRow{
+    .itemRow,.main,.finalSketches__row{
         flex-direction: column;
     }
-    .item{
+    .item,.main__info,.main__pic,.finalSketches__item{
         width: 100%;
         margin: 20px 0px;
     }
