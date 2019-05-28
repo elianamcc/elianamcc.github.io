@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/projectPages.css">
+        <link rel="stylesheet" href="../css/globalStyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">        <!-- NAVIGATION BAR -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- NAVIGATION -->
+        <div class="navbar flexBox">
+            <h1 class="navbar__title">Eliana McComas</h1>
+            <a class="navbar__item" href="../index.html">Home</a>
+            <a class="navbar__item" href="../about.html">About</a>
+            <a class="navbar__item" href="../projects.html">Projects</a>
+            <a class="navbar__item navbar__item--last" href="../photography.html">Photography</a>
+        </div>
+
+        <!-- PROJECT COVER -->
+        <div class="projectCover" id="keyCover">
+            <h1 class="projectCover__title" id="key">KeyShot Rendering</h1>
+        </div>
+
+        <div class="container">
+            <!-- PROJECT INTRODUCTION -->
+            <div class="project__info">
+                <h3 class="project__title">KEYSHOT</h3>
+                <p class="project__descrip">is a rendering program that I learned Northwestern class. Our final assignment was to chose a model of our own and produce two renderings of it using KeyShot and Adobe Photoshop for post-editing. I decided to model a chair and produced two images- one with the chair in a studio environment with minimal background, and the other with the chair in a home environment with more background noise in order to explore different environments and lighting solutions.</p>
+            </div>
+
+            <h1 class="finalSketches__title" id="finalRenderings__title">FINAL RENDERINGS</h1>
+            <!-- PROJECT CONTENT -->
+            <div class="main flexBox">
+                <div class="main__pic" id="chair1" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+                <div class="main__pic" id="chair2" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+            </div>
+            <div class="main flexBox">
+                <div class="main__info">
+                    <h4 class="main__info--title paddingRight">process</h4>
+                    <p class="mainText paddingRight">
+                            Since this project was very open-ended I was able to determine a lot of parameters myself. I wanted to create a model that was believable while also creating two images that placed my model in very different environments in order to show my skill set in a variety of areas. I was inspired by this rendering by keyshot influencer Esben Oxholm, and wanted to replicate the believability of the materials.                    </p>
+                </div>
+                <div class="main__pic" id="process"></div>
+            </div>
+            
+
+        </div>
+              
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+        
+            <div class="mySlides">
+                <div class="numbertext">1 / 2</div>
+                <img src="../images/key/keyCover.jpg" style="height:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 2</div>
+                <img src="../images/key/Chair2 (1).jpg" style="height:100%">
+            </div>
+            
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            </div>
+        <!-- CONTACT -->
+        <div class="container">
+            <div class="contact flexBox">
+                <span class="contact__title">Contact</span>
+                <a class="contact__email" href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+            </div>
+        </div>
+
+    </body>
+    <script src="../modal.js"></script>
+</html>

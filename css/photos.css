@@ -1,0 +1,129 @@
+.subTitle{
+    font-size: 12px;
+    font-family: "Roboto Slab";
+    font-weight: bolder;
+    margin-top:15px;
+    letter-spacing: 0em;
+}
+
+.photoGrid{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photoGrid__item{
+    width: 21%;
+    padding: 20px;
+}
+
+.photoGrid__item:hover{
+    transform: scale(1.2);
+}
+
+.photoGrid__item:nth-child(1),.photoGrid__item:nth-child(5){
+    padding-left:0px;
+}
+.photoGrid__item:nth-child(4),.photoGrid__item:nth-child(8){
+    padding-right:0px;
+}
+
+@media screen and (max-width: 650px){
+    .photoGrid__item:nth-child(odd){
+        padding-left:0px;
+    }
+    .photoGrid__item:nth-child(even){
+        padding-right:0px;
+    }
+    .photoGrid__item{
+        width:40%;
+    }
+  }
+
+
+/* MODAL */
+
+.close {
+  color: white;
+  position: absolute;
+  top: 90px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fefefe;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  

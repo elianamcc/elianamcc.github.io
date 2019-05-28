@@ -1,0 +1,92 @@
+/* ELEMENT STYLING */
+html{
+    font-family: 'Playfair Display', serif;
+}
+
+h1,h2{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* UTILITY CLASSES */
+.flexBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    flex-direction: column;
+    justify-content: center;
+    margin:0px 5%;
+}
+
+.pageTitle{
+    font-weight: normal;
+    font-size: 22px;
+    height: 150px;
+    width: 100%;
+    margin-top: 70px;
+    letter-spacing: -0.05em;
+    flex-direction: column;
+}
+
+/* NAVIGATION BAR -----------------------------------*/
+.navbar{
+    justify-content: flex-end;
+    position: fixed;
+    height:70px;
+    width:100%;
+    z-index: 99;
+    top:0px;
+    left:0px;
+    background-color: white;
+}
+
+.navbar__title{
+    font-size:16px;
+    font-weight:lighter;
+    position: fixed;
+    left:5%;
+    padding-left:10px;
+}
+
+.navbar__item{
+    font-size: 12px;
+    padding: 0px 15px;
+    letter-spacing: 0.15em;
+    color: rgb(182, 182, 182);
+}
+.navbar__item:hover{
+    color: black;
+}
+.navbar__item--last{
+    padding-right: 5% !important;
+}
+
+
+/* CONTACT -----------------------------------*/
+.contact{
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: -0.05em;
+    line-height: 1.9em;
+    background-color: rgb(44, 44, 44);
+    color: rgb(182, 182, 182);
+}
+
+.contact__email{
+    font-family: Arial;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    color: rgb(182, 182, 182);
+}
+.contact__email:hover{
+    color: white;
+}

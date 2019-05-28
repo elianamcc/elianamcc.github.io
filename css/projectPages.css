@@ -1,0 +1,369 @@
+.container{
+    margin: 0px 10% !important;
+}
+.paddingLeft{
+    padding-left:50px;
+}
+.paddingRight{
+    padding-right:50px;
+}
+
+/* PROJECT COVER */
+.projectCover{
+    height: 400px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+#hexCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/hex/hex.png");
+}
+#carCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/car/carCover.jpg");
+}
+#arcCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/arc/arcstartname3.jpg");
+}
+#keyCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/key/keyCover.jpg");
+}
+/*idk why you have to make these id's and not classes but its fiiiiine*/
+#hexCover,#carCover,#arcCover,#keyCover{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; 
+}
+
+.projectCover__title{
+    font-size: 50px;
+    letter-spacing: -0.1em;
+    margin-left: 10%;
+}
+#key{
+    margin-bottom: 50px;
+}
+.projectCover__subtitle{
+    font-size: 35px;
+    letter-spacing: -0.05em;
+    margin: 0px 0px 50px 10%;
+}
+
+/* PROJECT INTRODUCTION */
+.project__info{
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+}
+.project__icon{
+    height: 60px;
+    width: 60px;
+}
+.project__title{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: normal;
+}
+.project__descrip{
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.5em;
+    max-width: 600px;
+}
+
+
+/* PROJECT CONTENT */
+.main{
+    width: 100%;
+}
+
+/*for pictures*/
+.main__pic{
+    min-height:368px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+/* HEXAPLANTER */
+#team{
+    background-image: url("../images/hex/team.jpeg");
+}
+#prototype{
+    background-image: url("../images/hex/hexmock2.PNG");
+}
+
+/* CONSTRUCT A CAR */
+#mission{
+    background-image: url("../images/car/mission.jpg");
+}
+#working{
+    background-image: url("../images/car/working.jpg");
+}
+
+/* ARCHITECTURE */
+#hotel{
+    background-size: contain;
+    background-image: url("../images/arc/hotel\ final\ model.jpg")
+}
+#inspo{
+    background-image: url("../images/arc/hotel\ sketch1.jpg")
+}
+#shape{
+    background-image: url("../images/arc/hotel\ model1.jpg")
+}
+#build{
+    background-image: url("../images/arc/hotel\ build.jpg")
+}
+
+/* RENDERING */
+#chair1{
+    background-image: url("../images/key/keyCover.jpg")
+}
+#chair2{
+    background-image: url("../images/key/Chair2\ \(1\).jpg")
+}
+#process{
+    min-height:500px;
+    margin: 10px 0;
+    background-image: url("../images/key/process.jpg")
+}
+
+/*for explanation*/
+.main__info{
+    height: 100%;
+    width: 50%;
+}
+.main__info--title{
+    font-size: 20px;
+    letter-spacing: -0.05em;
+    line-height: 1.9em;
+    font-weight: normal;
+}
+.mainText{
+    color: #7a7a7a;
+    font-size: 16px;
+    font-family: "Roboto";
+    letter-spacing: 0.1em;
+    line-height: 2.0em;
+    display:inline-block;
+}
+
+/* PICTURE OF POSTER */
+.picDiv{
+    height:120vh;
+    width: 100%;
+}
+.hexPoster{
+    height: 100%;
+}
+
+
+/* FOR CAR COMPONENTS SECTION */
+.components{
+    width: 100%;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.item,.item__info,.item__image{
+    width: 50%;
+}
+.item{
+    height: 100%;
+    /* align-items: flex-start !important; */
+}
+.itemRow{
+    height:50%;
+    width: 100%;
+    margin: 20px 0;
+}
+.item__image{
+    height:250px;
+    width:250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+#exterior{
+    background-image: url("../images/car/exterior.jpg");
+}
+#windup{
+    background-image: url("../images/car/windup.jpg")
+}
+#piston{
+    background-image: url("../images/car/piston.jpg")
+}
+#base{
+    background-image: url("../images/car/baseframe.jpg")
+}
+
+
+.item__info--title{
+    font-size: 13px;
+    letter-spacing: -0.05em;
+    line-height: 1.9em;
+    margin-top: 0;
+    padding-left:20px;
+}
+
+.componentText{
+    font-family: "Roboto Slab";
+    font-size: 11px;
+    letter-spacing: 0.0em;
+    line-height: 2.2em;
+    display:inline-block;
+    padding-left:20px;
+}
+
+/* FINAL SKETCHES */
+.finalSketches__title{
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    letter-spacing: 0.1em;
+    line-height: 2.0em;
+    font-weight: normal;
+    padding:100px 0 50px 0;
+}
+
+.finalSketches__row > .finalSketches__item {
+    padding: 0 8px;
+  }
+  
+  .finalSketches__row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .finalSketches__item {
+    width: 20%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow{
+    transition: 0.3s;
+    width: 100%;
+  }
+  
+  .hover-shadow:hover, #chair2:hover, #chair1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+  #finalRenderings__title{
+      padding-top:25px;
+  }
+
+
+@media screen and (max-width: 800px){
+    .itemRow,.main,.finalSketches__row{
+        flex-direction: column;
+    }
+    .item,.main__info,.main__pic,.finalSketches__item{
+        width: 100%;
+        margin: 20px 0px;
+    }
+  }

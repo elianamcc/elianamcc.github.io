@@ -2,50 +2,57 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/projects.css">
-        <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/globalStyles.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">        <!-- NAVIGATION BAR -->
     </head>
 
     <body>
         <!-- NAVIGATION -->
-        <div class="navbar">
+        <div class="navbar flexBox">
             <h1 class="navbar__title">Eliana McComas</h1>
             <a class="navbar__item" href="index.html">Home</a>
             <a class="navbar__item" href="about.html">About</a>
             <a class="navbar__item" href="projects.html">Projects</a>
-            <a class="navbar__item navbar__item--last" href="#">Photography</a>
+            <a class="navbar__item navbar__item--last" href="photography.html">Photography</a>
         </div>
 
         <div class="container flexBox">
             <div class="pageTitle flexBox">DESIGN PROJECTS</div>
             <div class="projectCont flexBox">
                 <div class="project flexBox">
-                    <div class="project__image" id="hex"></div>
-                    <span class="project__caption">Hexaplanter</span>
+                    <a class="project__link" href="projectPages/hex.html">
+                        <div class="project__image" id="hex"></div>
+                        <span class="project__caption">Hexaplanter</span>
+                    </a>
                 </div>
                 <div class="project flexBox">
-                    <div class="project__image" id="car"></div>
-                    <span class="project__caption">Construct-A-Car</span>
+                    <a class="project__link" href="projectPages/car.html">
+                        <div class="project__image" id="car"></div>
+                        <span class="project__caption">Construct-A-Car</span>
+                    </a>
                 </div>
                 <div class="project flexBox">
-                    <div class="project__image" id="arc"></div>
-                    <span class="project__caption">ArcStart Hotel Architecture</span>
+                    <a class="project__link" href="projectPages/arc.html">
+                        <div class="project__image" id="arc"></div>
+                        <span class="project__caption">ArcStart Hotel Architecture</span>
+                    </a>
                 </div>
                 <div class="project flexBox">
-                    <div class="project__image" id="key"></div>
-                    <span class="project__caption">KeyShot Rendering</span>
+                    <a class="project__link" href="projectPages/key.html">
+                        <div class="project__image" id="key"></div>
+                        <span class="project__caption">KeyShot Rendering</span>
+                    </a>
                 </div>
             </div>
 
-
-        </div>
             <!-- CONTACT -->
-            <div class="contact">
-                    <span class="contact__title">Contact</span>
-                    <a class="contact__email" href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
-                </div>
+            <div class="contact flexBox">
+                <span class="contact__title">Contact</span>
+                <a class="contact__email" href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+            </div>
+        </div>
+
 
     </body>
 </html>
