@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/photos.css">
+        <link rel="stylesheet" href="css/globalStyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">        <!-- NAVIGATION BAR -->
+    </head>
+    
+    <body>
+        <!-- NAVIGATION -->
+        <div class="navbar flexBox">
+            <h1 class="navbar__title">Eliana McComas</h1>
+            <a class="navbar__item" href="index.html">Home</a>
+            <a class="navbar__item" href="about.html">About</a>
+            <a class="navbar__item" href="projects.html">Projects</a>
+            <a class="navbar__item navbar__item--last" href="photography.html">Photography</a>
+        </div>
+
+        <div class="container flexBox">
+            <div class="pageTitle flexBox">
+                <div>PHOTOGRAPHY</div>
+                <p class="subTitle">I enjoy photography on the side as another creative outlet. Please enjoy this selection of my photography!</p>
+              </div>
+            <div class="photoGrid flexBox">
+                <img class="photoGrid__item" src="images/photography/img01.jpg" onclick="openModal();currentSlide(1)">
+                <img class="photoGrid__item" src="images/photography/img02.jpg" onclick="openModal();currentSlide(2)">
+                <img class="photoGrid__item" src="images/photography/img03.jpg" onclick="openModal();currentSlide(3)">
+                <img class="photoGrid__item" src="images/photography/img04.jpg" onclick="openModal();currentSlide(4)">
+                <img class="photoGrid__item" src="images/photography/img05.jpg" onclick="openModal();currentSlide(5)">
+                <img class="photoGrid__item" src="images/photography/img06.jpg" onclick="openModal();currentSlide(6)">
+                <img class="photoGrid__item" src="images/photography/img07.jpg" onclick="openModal();currentSlide(7)">
+                <img class="photoGrid__item" src="images/photography/img08.jpg" onclick="openModal();currentSlide(8)">
+            </div>
+            
+            <!-- CONTACT -->
+            <div class="contact flexBox">
+                <span class="contact__title">Contact</span>
+                <a class="contact__email" href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+            </div>
+        </div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 8</div>
+					<img src="images/photography/img01.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">2 / 8</div>
+					<img src="images/photography/img02.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">3 / 8</div>
+					<img src="images/photography/img03.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">4 / 8</div>
+					<img src="images/photography/img04.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">5 / 8</div>
+					<img src="images/photography/img05.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">6 / 8</div>
+					<img src="images/photography/img06.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">7 / 8</div>
+					<img src="images/photography/img07.jpg" style="width:100%">
+				</div>
+				<div class="mySlides">
+					<div class="numbertext">8 / 8</div>
+					<img src="images/photography/img08.jpg" style="width:100%">
+				</div>
+			</div>
+			
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>  
+		
+    </body>
+    <script src="modal.js"></script>
+</html>
