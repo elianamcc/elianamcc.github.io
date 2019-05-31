@@ -1,3 +1,8 @@
+/*-------------------------------------------------------*/
+/*                   HEADER / COVER
+/*-------------------------------------------------------*/
+
+/*fixes cover photo position (parallax effect) */
 .parallax{
     position: relative;
     background-attachment: fixed;
@@ -6,8 +11,6 @@
     background-size: cover;
 }
 
-
-/* HEADER --------------------------------------------------*/
 .header{
     height: 100vh;
     background-image: url("../images/cover-eli.jpg");
@@ -16,11 +19,11 @@
 .caption{
     flex-direction: column;
     position: absolute;
-    left: 0;
     top: 50%;
     width: 100%;
-    text-align: center;
     margin: 0px;
+    left: 0;
+    text-align: center;
     color: white;
 }
 
@@ -35,16 +38,18 @@
 .caption__subtitle{
     font-family: "Roboto";
     font-size: 29px;
+    margin: 10px 0px;
     letter-spacing: 0.1em;
     line-height: 2.0em;
-    margin: 10px 0px;
 }
 
-/* ABOUT --------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*                       ABOUT
+/*-------------------------------------------------------*/
 .about{
-    height: 350px;
     flex-direction: column;
     align-items: flex-start !important;
+    height: 350px;
 }
 
 .about__title{
@@ -55,70 +60,76 @@
 }
 
 .about__info{
-    font-size: 16px;
     font-family: "Roboto";
+    font-size: 16px;
+    margin: 10px 0px 10px 5%;
     letter-spacing: 0.1em;
     line-height: 2.0em;
-    margin: 10px 0px 10px 5%;
     color: rgb(122, 122, 122);
 }
 
 .about__more{
     font-family: "Roboto Slab";
-    letter-spacing: 0.0em;
-    line-height: 2.2em;
     font-size: 12px;
     margin: 20px 0px 0px 5%;
+    letter-spacing: 0.0em;
+    line-height: 2.2em;
     color: rgb(89, 89, 89);
 }
 
-/* PROJECTS --------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*                      PROJECTS
+/*-------------------------------------------------------*/
 .projects{
     height: 60vh;
     background-image: url("../images/yes.jpg");
-    background-color: rgb(129, 129, 129);
     opacity: 0.75;
     color: white;
+    background-color: rgb(129, 129, 129);
 }
 
 .projectsCaption{
-    height: 100%;
-    width: 100%;
     flex-direction: column;
     position: absolute;
+    height: 100%;
+    width: 100%;
     text-align: center;
 }
 
 .projects__title{
     font-size: 34px;
+    margin-bottom: 10px;
     line-height: 0.9em;
     letter-spacing: 0.7em;
-    margin-bottom: 10px;
 }
 
 .projects__info{
     font-family: "Roboto Slab";
     font-size: 12px;
+    min-width:200px;
+    margin:20px 25%;
     letter-spacing: 0.0em;
     line-height: 2.2em;
-    margin:20px 25%;
-    min-width:200px;
 }
 
 .projects__button{
     font-size: 12px;
+    padding:10px 20px;
     border-radius: 20px;
     letter-spacing: 0.05em;
-    padding:10px 20px;
     color: white;
     background-color: transparent;
     border: 2px solid white;
 }
 .projects__button:hover{
-    background-color: white;
     color: black;
+    background-color: white;
 }
 
+
+/*-------------------------------------------------------*/
+/*                     RESPONSIVENESS
+/*-------------------------------------------------------*/
 @media screen and (max-width: 600px){
     .about{
         height: 400px;

@@ -1,3 +1,6 @@
+/*-------------------------------------------------------*/
+/*               INTRODUCTION (left box)
+/*-------------------------------------------------------*/
 .intro{
     flex-direction: column;
     align-items: flex-start;
@@ -8,27 +11,32 @@
 
 .intro__title{
     font-size: 20px;
+    margin: 0px 10% 5% 10%;
     letter-spacing: -0.05em;
     line-height: 1.9em;
-    margin: 0px 10% 5% 10%;
 }
 
 .intro__info{
-    font-size: 16px;
     font-family: "Roboto";
+    font-size: 16px;
     margin: 0 10%;
     letter-spacing: 0.1em;
     line-height: 2.0em;
     color: rgb(122, 122, 122);
 }
 
+/*-------------------------------------------------------*/
+/*                 PICTURE (right box)
+/*-------------------------------------------------------*/
 .picture{
-    height:75vh;
-    width:50%;
+    height: 75vh;
+    width: 50%;
     background-image: url("../images/about-eli.jpg")
 }
 
-
+/*-------------------------------------------------------*/
+/*                     RESPONSIVENESS
+/*-------------------------------------------------------*/
 @media screen and (max-width: 600px){
     .intro__info,.intro__title{
         margin: 0 5%;
@@ -41,8 +49,8 @@
     }
   }
 
-  @media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
     .intro__info,.intro__title{
         margin: 0 5%;
     }
-  }
+}
