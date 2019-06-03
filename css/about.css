@@ -31,7 +31,9 @@
 .picture{
     height: 75vh;
     width: 50%;
-    background-image: url("../images/about-eli.jpg")
+    background-image: url("../images/about-eli.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
 /*-------------------------------------------------------*/
