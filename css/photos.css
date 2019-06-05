@@ -18,6 +18,7 @@
 
 .photoGrid__item:hover{
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 .photoGrid__item:nth-child(1),.photoGrid__item:nth-child(5){

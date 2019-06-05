@@ -1,7 +1,7 @@
 /*-------------------------------------------------------*/
 /*                     ELEMENT STYLING
 /*-------------------------------------------------------*/
-h5{
+h4,h5{
     margin: 0;
 }
 
@@ -74,7 +74,7 @@ h5{
 /*                   PROJECT INTRO
 /*-------------------------------------------------------*/
 .project__info{
-    margin: 70px 0;
+    margin: 60px 0 40px 0;
     display: flex;
     flex-direction: column;
 }
@@ -149,6 +149,9 @@ h5{
 }
 #chair2{
     background-image: url("../images/key/Chair2\ \(1\).jpg")
+}
+#chair1:hover,#chair2:hover{
+    cursor: pointer;
 }
 #process{
     min-height:500px;
@@ -256,6 +259,7 @@ h5{
     letter-spacing: 0.1em;
     line-height: 2.0em;
     font-weight: normal;
+    margin-top:20px;
 }
 
 .finalSketches__row > .finalSketches__item {
@@ -275,7 +279,7 @@ h5{
 
    /*KEY RENDERINGS------------------------------------------------*/
    #finalRenderings__title{
-        padding-top:25px;
+        margin-bottom: 20px;
     }
 
 
@@ -380,6 +384,7 @@ h5{
   
   .hover-shadow:hover, #chair2:hover, #chair1:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
   }
 
 
