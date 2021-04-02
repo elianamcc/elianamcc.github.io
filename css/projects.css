@@ -43,7 +43,12 @@
 #key{
     background-image: url("../images/key/key-icon.png");
 }
-
+#coffee{
+    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/CoffeeCapstone/20210301_130401.jpg")
+}
+#conservatory{
+    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Conservatory/Conservatory+axon1.png")
+}
 /*project name------------------------*/
 .project__link {
     height: 100%;

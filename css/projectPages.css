@@ -84,12 +84,12 @@ h4,h5{
 }
 .project__title{
     font-family: Montserrat;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: normal;
 }
 .project__descrip{
     font-family: Arial;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 1.5em;
     max-width: 600px;
