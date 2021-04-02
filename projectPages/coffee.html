@@ -1,145 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/projectPages.css">
-        <link rel="stylesheet" href="../css/globalStyles.css">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">        <!-- NAVIGATION BAR -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <!-- NAVIGATION -->
-        <div class="navbar flexBox">
-            <h1 class="navbar__title">Eliana McComas</h1>
-            <a class="navbar__item" href="../index.html">Home</a>
-            <a class="navbar__item" href="../about.html">About</a>
-            <a class="navbar__item" href="../projects.html">Projects</a>
-            <a class="navbar__item navbar__item--last" href="../photography.html">Photography</a>
-        </div>
 
-        <!-- PROJECT COVER -->
-        <div class="projectCover" id="arcCover">
-            <h1 class="projectCover__title">Coffee Capstone</h1>
-            <h2 class="projectCover__subtitle">design capstone project</h2>
-        </div>
+<head>
+    <link rel="stylesheet" href="../css/projectPages.css">
+    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">
+    <!-- NAVIGATION BAR -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-        <div class="container">
-            <!-- PROJECT INTRODUCTION -->
-            <div class="project__info">
+<body>
+    <!-- NAVIGATION -->
+    <div class="navbar flexBox">
+        <h1 class="navbar__title">Eliana McComas</h1>
+        <a class="navbar__item" href="../index.html">Home</a>
+        <a class="navbar__item" href="../about.html">About</a>
+        <a class="navbar__item" href="../projects.html">Projects</a>
+        <a class="navbar__item navbar__item--last" href="../photography.html">Photography</a>
+    </div>
+
+    <!-- PROJECT COVER -->
+    <div class="projectCover" id="coffeeCover">
+        <div class="projectCover__body">
+            <div class="projectCover__container">
+                <h1 class="projectCover__title">Coffee Capstone</h1>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Role</h2>
+                <h2 class="projectCover__value">blah blah blah</h2>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Duration</h2>
+                <h2 class="projectCover__value">blah blah blah</h2>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Tools</h2>
+                <h2 class="projectCover__value">blah blah blah</h2>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Team</h2>
+                <h2 class="projectCover__value">blah blah blah</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- PROJECT INTRODUCTION -->
+        <div class="project__info">
+            <div class="projectNameContainer">
                 <h3 class="project__title">CAPSTONE</h3>
-                <p class="project__descrip">Words.</p>
-                <p class="project__descrip">More words.</p>
+                <h3 class="project__subtitle">Summer 2019 Airbnb Plus OpsTech Experience Design Intern</h3>
             </div>
-
-            <!-- PROJECT CONTENT -->
-            <div class="main flexBox">
-                <div class="main__pic" id="hotel"></div>
-                <div class="main__info">
-                    <h4 class="main__info--title paddingLeft">The final model</h4>
-                    <p class="mainText paddingLeft">Built at 1/8th scale, my final model made from 4 ply and 2 ply museum board reached over 2ft in height.</p>
-                </div>
-            </div>
-            <div class="main flexBox">
-                <div class="main__info">
-                    <h4 class="main__info--title paddingRight">finding inspiration</h4>
-                    <p class="mainText paddingRight">
-                        To create the form of my hotel we were first given multiple action words that we had to translate into models. Examples of such words include "intersect", "taper", "slice", and "branch".
-                    </p>
-                </div>
-                <div class="main__pic" id="inspo"></div>
-            </div>
-            <div class="main flexBox">
-                <div class="main__pic" id="shape"></div>
-                <div class="main__info">
-                    <h4 class="main__info--title paddingLeft">deciding on a shape</h4>
-                    <p class="mainText paddingLeft">From my inital sketches and carboard mockups, I liked my ideas that stemed from the words "slice" and "taper". I combined those two words to create the model on the left and then refined my idea to create the model on the right, which served as my final design prototype.</p>
-                </div>
-            </div>
-            <div class="main flexBox">
-                <div class="main__info">
-                    <h4 class="main__info--title paddingRight">building the model</h4>
-                    <p class="mainText paddingRight">
-                        The largest segments of my model were made of 4 ply museum board in order to be sturdy enough to support the rest of the model, which was made of 2 ply museum board. My final sketches were hand drawn at 1/16th scale with HB pencil on bristol paper.                    </p>
-                </div>
-                <div class="main__pic" id="build"></div>
-            </div>
-            
-
-        </div>
-        <h1 class="finalSketches__title">FINAL SKETCHES</h1>
-        <div class="finalSketches__row flexBox">
-                <div class="finalSketches__item">
-                  <img src="../images/arc/finalSketches/front.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-                </div>
-                <div class="finalSketches__item">
-                  <img src="../images/arc/finalSketches/frontSection.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-                </div>
-                <div class="finalSketches__item">
-                  <img src="../images/arc/finalSketches/base.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-                </div>
-                <div class="finalSketches__item">
-                  <img src="../images/arc/finalSketches/top.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
-                </div>
-                <div class="finalSketches__item">
-                    <img src="../images/arc/finalSketches/side.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
-                </div>
-              </div>
-              
-              <!-- The Modal/Lightbox -->
-            <div id="myModal" class="modal">
-            <span class="close cursor" onclick="closeModal()">&times;</span>
-            <div class="modal-content">
-            
-                <div class="mySlides mySlides--center">
-                    <div class="flexBox">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="../images/arc/finalSketches/front.jpg" style="height:100%">
-                    </div>
-                </div>
-            
-                <div class="mySlides mySlides--center">
-                    <div class="flexBox">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="../images/arc/finalSketches/frontSection.jpg" style="height:100%">
-                    </div>
-                </div>
-            
-                <div class="mySlides mySlides--center">
-                    <div class="flexBox">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="../images/arc/finalSketches/base.jpg" style="height:100%">
-                    </div>
-                </div>
-            
-                <div class="mySlides mySlides--center">
-                    <div class="flexBox">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="../images/arc/finalSketches/top.jpg" style="height:100%">
-                    </div>
-                </div>
-
-                <div class="mySlides mySlides--center">
-                    <div class="flexBox">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="../images/arc/finalSketches/side.jpg" style="height:100%">
-                    </div>
-                </div>
-              
-                  <!-- Next/previous controls -->
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-                </div>
-              </div>
-        <!-- CONTACT -->
-        <div class="container">
-            <div class="contact flexBox">
-                <span class="contact__title">Contact</span>
-                <a class="contact__email" href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+            <div class="projectDescripContainer">
+                <p class="projectDescrip__header">I interned with the Airbnb Plus Operations Technology team, where I
+                    worked on designing internal tools and visual systems to improve the employee onboarding experience
+                    and workflow efficiency. </p>
+                <p class="projectDescrip__body">I had an amazing experience working on various projects throughout the
+                    summer and spent six weeks on my keystone project. The project's goal was to design a visual system
+                    that allows operations agents to easily learn keyboard shortcuts in a non-invasive and functional
+                    way. I researched in-class examples of existing systems, collaborated cross-functionally across
+                    teams, and used systems design thinking.</p>
             </div>
         </div>
 
-    </body>
-    <script src="../modal.js"></script>
+        <!-- PROJECT CONTENT -->
+        <section id="context">
+            <div class="titleContainer">
+                <h1 class="section__title">Context</h1>
+            </div>
+            <div class="subsection">
+                <h2 class="subsection__title">Overview</h2>
+                <p class="subsection__body">Airbnb Plus is a program for Airbnb listings with exceptional quality,
+                    comfort, and style. In my team, OpsTech, we developed internal tools to help resolve skills
+                    shortages and enable employee retention within the Airbnb Plus team. My keystone project (six weeks)
+                    was to design a library of keyboard shortcuts and develop a foundational point-of-view for the
+                    company to visualize shortcuts. I conducted a case study on Plus Tools, an evaluation tool used by
+                    operations agents to determine a listing’s Plus program eligibility, but also had to keep in mind
+                    how my design would work in other tools as well.</p>
+                <h2 class="subsection__title">Overview</h2>
+                <p class="subsection__body">Airbnb Plus is a program for Airbnb listings with exceptional quality,
+                    comfort, and style. In my team, OpsTech, we developed internal tools to help resolve skills
+                    shortages and enable employee retention within the Airbnb Plus team. My keystone project (six weeks)
+                    was to design a library of keyboard shortcuts and develop a foundational point-of-view for the
+                    company to visualize shortcuts. I conducted a case study on Plus Tools, an evaluation tool used by
+                    operations agents to determine a listing’s Plus program eligibility, but also had to keep in mind
+                    how my design would work in other tools as well.</p>
+            </div>
+        </section>
+
+        <img class="fullImage" src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_938993594_401542.jpg">
+    </div>
+
+
+
+
+    <!-- CONTACT -->
+    <div class="container">
+        <div class="contact flexBox">
+            <span class="contact__title">Contact</span>
+            <a class="contact__email"
+                href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+        </div>
+    </div>
+
+</body>
+<script src="../modal.js"></script>
+
 </html>

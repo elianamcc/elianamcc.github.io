@@ -24,15 +24,13 @@ h4,h5{
 
 /*styling for general project cover photos*/
 .projectCover{
-    height: 400px;
+    font-family: Inter, sans-serif;
+    height: 90vh;
     width: 100%;
     margin-top: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
-    font-family: Montserrat;
-    font-weight: bold;
 }
 
 /*styling for individual project cover photos*/
@@ -48,6 +46,10 @@ h4,h5{
 #keyCover{
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/key/keyCover.jpg");
 }
+#coffeeCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_938993594_401542.jpg");
+
+}
 /*idk why you have to make these id's and not classes but its fiiiiine*/
 #hexCover,#carCover,#arcCover,#keyCover{
     background-repeat: no-repeat;
@@ -55,15 +57,29 @@ h4,h5{
     background-position: center; 
 }
 
+.projectCover__body{
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projectCover__container{
+    margin: 8% 0;
+}
 /*project title and subtitle*/
 .projectCover__title{
     font-size: 50px;
-    letter-spacing: -0.1em;
-    margin-left: 10%;
 }
-#key{
-    margin-bottom: 50px;
+.projectCover__label{
+    font-size: 14px;
+    font-weight: bold;
 }
+.projectCover__value{
+    font-size: 16px;
+    font-weight: normal;
+}
+
 .projectCover__subtitle{
     font-size: 35px;
     letter-spacing: -0.05em;
@@ -74,19 +90,38 @@ h4,h5{
 /*                   PROJECT INTRO
 /*-------------------------------------------------------*/
 .project__info{
-    margin: 60px 0 40px 0;
+    font-family: Inter, sans-serif;
     display: flex;
-    flex-direction: column;
+    padding: 2.5% 0;
 }
-.project__icon{
-    height: 60px;
-    width: 60px;
+
+.projectNameContainer{
+    padding: 5%;
+    width: 40%;
 }
 .project__title{
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: normal;
+    font-size: 40px;
+    color: #6b6b6b;
 }
+.project__subtitle{
+    font-size: 20px;
+    font-weight: normal;
+    color: #a5a5a5;
+}
+
+.projectDescripContainer{
+    padding: 5%;
+    width: 60%;
+    color: #4f4f4f;
+}
+.projectDescrip__header{
+    font-size: 20px;
+}
+.projectDescrip__body{
+    font-size: 16px;
+}
+
+
 .project__descrip{
     font-family: Arial;
     font-size: 14px;
@@ -94,12 +129,49 @@ h4,h5{
     line-height: 1.5em;
     max-width: 600px;
 }
+.project__icon{
+    height: 60px;
+    width: 60px;
+}
 
 
 /*-------------------------------------------------------*/
 /*                   PROJECT CONTENT
 /*-------------------------------------------------------*/
 .main{
+    width: 100%;
+}
+
+section{
+    font-family: Inter, sans-serif;
+    display: flex;
+    padding: 2.5% 0;
+}
+
+.titleContainer{
+    width: 35%;
+    padding: 0 5%;
+    display: flex;
+    align-items: flex-start;
+}
+.section__title{
+    font-size: 30px ;
+    font-weight: 700;
+}
+
+.subsection{
+    width: 65%;
+    color: #4f4f4f;
+}
+.subsection__title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.subsection__body{
+    line-height: 200%;
+}
+
+.fullImage{
     width: 100%;
 }
 
