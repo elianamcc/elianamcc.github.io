@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/projectPages.css">
+    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">
+    <!-- NAVIGATION BAR -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="navbar flexBox">
+        <h1 class="navbar__title">Eliana McComas</h1>
+        <a class="navbar__item" href="../index.html">Home</a>
+        <a class="navbar__item" href="../about.html">About</a>
+        <a class="navbar__item" href="../projects.html">Projects</a>
+        <a class="navbar__item navbar__item--last" href="../photography.html">Photography</a>
+    </div>
+
+    <!-- PROJECT COVER -->
+    <div class="projectCover" id="shelterCover">
+        <div class="projectCover__body">
+            <div class="projectCover__container">
+                <h1 class="projectCover__title">ShelterCase</h1>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Role</h2>
+                <h2 class="projectCover__value">Project Manager</h2>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Duration</h2>
+                <h2 class="projectCover__value">April 2021 - June 2021</h2>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Tools</h2>
+                <h2 class="projectCover__value">Solidworks, laser cutter, mill, vertical and horizontal band saw,
+                    riveter, optical comparator </h2>
+            </div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Team</h2>
+                <h2 class="projectCover__value">3 Design Students</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- PROJECT INTRODUCTION -->
+        <div class="project__info">
+            <div class="projectNameContainer">
+                <h3 class="project__title">Bionic Wrench</h3>
+                <h3 class="project__subtitle">DSGN 386: Manufacturing Engineering Design</h3>
+            </div>
+            <div class="projectDescripContainer">
+                <p class="projectDescrip__header">Our goal was to create our own assembly for the Bionic Wrench™.
+                    </I> </p>
+                <p class="projectDescrip__body"> After taking the wrench apart and analyzing its parts to understand how
+                    the wrench is assembled, we designed our fixtures for assembly and used those to inform our
+                    production line and value stream map. At the end of the quarter, each team participated in a 30
+                    minute time trial to manufacture the most wrenches in that time to prove our fixture design and
+                    production line functionality.</p>
+            </div>
+        </div>
+
+        <!-- PROJECT CONTENT -->
+        <div class="flexBox">
+            <img class="fullImage"
+                src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/decomposed+wrench.jpg">
+        </div>
+
+        <section id="context">
+            <div class="titleContainer">
+                <h1 class="section__title">Research</h1>
+            </div>
+            <div class="subsection">
+                <p class="subsection__body">First, we disassembled the wrench and used multiple tools including an
+                    optical comparator to precisely measure each part. We also performed a six sigma analysis on the
+                    “jaw” component to learn about the inconsistencies in manufacturing processes and how properly
+                    tolerancing your parts to account for tolerance stack up. We also determined areas of each part that
+                    required tighter tolerances or were able to have looser tolerances depending on the functional
+                    requirements of each part. Using this knowledge, we designed fixtures to hold the wrench during the
+                    assembly process that would allow us to consistently assemble quality wrenches.</p>
+            </div>
+        </section>
+
+                <div class="flexBox">
+                    <img class="fullImage"
+                        src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/jaw+toleranced.jpg">
+                </div>
+
+        <section id="context">
+            <div class="titleContainer">
+                <h1 class="section__title">Design Process</h1>
+            </div>
+            <div class="subsection">
+                <h2 class="subsection__title">Gaining Understanding</h2>
+                <p class="subsection__body">During the project, I designed the fixtures for my team. I observed that
+                    there were three riveting stages which needed to be accomplished in a specific order. The three
+                    stages were, first, the assembly of the inner plates, then the assembly of the outer plates onto the
+                    inner plates, and then the assembly of the jaws onto the head of the wrench. My goal was to create
+                    fixtures that would assist in riveting the wrenches in the fastest, most efficient manner. The jaw
+                    assembly stage appeared to take the most time as it had the largest number of individual components
+                    involved. This led me to design one fixture specifically for this jaw assembly step. I decided to
+                    combine the other two steps to save on material and improve manufacturability since some of the
+                    locating pins could be used for both steps.
+                </p>
+
+                <h2 class="subsection__title">Main Fixture Design</h2>
+                <p class="subsection__body">While observing the wrench parts and manipulating them in different
+                    scenarios to simulate potential manufacturing processes, I found that using a sliding motion to move
+                    the part from point A to point B was faster than picking up the wrench and putting it down again.
+                    This led to the problem of being able to accurately slide from one riveting location to another. I
+                    realized that since our CAD model was highly accurate, I could create a pattern for riveting by
+                    connecting the rivet locations on our CAD model of the wrench assembly. This led to our final
+                    fixture design which consisted of two plates- one was a high strength steel that the wrench and
+                    rivets were placed directly on. This allowed for a strong surface that would not deform easily when
+                    subjected to the force of the riveter. This main plate had steel pins that held the parts accurately
+                    in place and two locating pins that fit into the transition plate. The second plate was this
+                    transition plate- it was laser cut from acrylic for easy manufacturing and consisted of the pattern
+                    I created, which was repeated for locating accuracy and the locating pins from the main plate would
+                    fit into. This transition plate also located the entire assembly on the riveter.</p>
+
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/Main_Fixture.JPG">
+                    </div>
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/Main_Fixture_Transition_Plate+(1).JPG">
+                    </div>
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/physical+main+fixture.jpg">
+                    </div>
+
+                <h2 class="subsection__title">Jaw Fixture Design</h2>
+                <p class="subsection__body">In addition to the main fixtures, I also created the jaw fixtures. When
+                    looking at the jaw rivets, I saw they were organized in a hexagonal pattern. Experimenting with this
+                    configuration led to my final design- a hexagonal base that supported the wrench head and could
+                    freely move around in the hexagonal pattern provided by the transition plate. Due to time
+                    constraints of the class, we found that the fastest, most accurate and most precise way to create
+                    our final prototype would be to laser cut the main body of the plate and then drill holes and insert
+                    steel pins to have a hard surface to rivet on.</p>
+
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/Jaw+locator+assembly.JPG">
+                    </div>
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/Fixture_Jaw_Rivet_Plate.JPG">
+                    </div>
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/physical+jaw+fixture.jpg">
+                    </div>
+
+                <h2 class="subsection__title">Production System Design</h2>
+                <p class="subsection__body">These fixtures then informed the design of our standard operating procedure.
+                    After practicing manufacturing with this procedure we had a rough time estimate of how long each
+                    step of the process would take. This allowed us to create our value stream map and design work
+                    stations that were as similar in time as possible to minimize inefficiencies.</p>
+
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/FINAL+Value+Stream+Map.png">
+                    </div>
+                    <div class="flexBox">
+                        <img class="fullImage"
+                            src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/FINAL+Workstation+design.png">
+                    </div>
+                    
+            </div>
+        </section>
+
+        
+
+        <section id="context">
+            <div class="titleContainer">
+                <h1 class="section__title">Takeaways</h1>
+            </div>
+            <div class="subsection">
+                <p class="subsection__body">I learned about the importance of the assembly-line worker when designing
+                    for manufacturing. I also successfully completed the time trial for our team and produced the most
+                    wrenches in 30 minutes out of the entire class.
+                </p>
+            </div>
+        </section>
+
+        <div class="flexBox">
+            <img class="fullImage"
+                src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/riveting+main.png">
+        </div>
+        <div class="flexBox">
+            <img class="fullImage"
+                src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/riveting+jaw.jpg">
+        </div>
+    </div>
+
+
+
+
+    <!-- CONTACT -->
+    <div class="container">
+        <div class="contact flexBox">
+            <span class="contact__title">Contact</span>
+            <a class="contact__email"
+                href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+        </div>
+    </div>
+
+</body>
+<script src="../modal.js"></script>
+
+</html>

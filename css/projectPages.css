@@ -48,10 +48,15 @@ h4,h5{
 }
 #coffeeCover{
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_938993594_401542.jpg");
-
+}
+#conservCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Conservatory/Conservatory+axon1.png");
+}
+#wrenchCover{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/wrench.jpg");
 }
 /*idk why you have to make these id's and not classes but its fiiiiine*/
-#hexCover,#carCover,#arcCover,#keyCover{
+#hexCover,#carCover,#arcCover,#keyCover,#coffeeCover, #conservCover{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center; 
@@ -172,7 +177,7 @@ section{
 }
 
 .fullImage{
-    width: 100%;
+    width: 80%;
 }
 
 /*PICTURES-----------------------------------------*/
