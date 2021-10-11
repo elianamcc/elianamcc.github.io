@@ -35,7 +35,7 @@ h4,h5{
 
 /*styling for individual project cover photos*/
 #hexCover{
-    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Hexaplanter/hexCover.jpg");
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Hexaplanter/hexBanner.jpg");
 }
 #carCover{
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Construct-A-Car/carCover.jpg");
@@ -47,7 +47,7 @@ h4,h5{
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("../images/key/keyCover.jpg");
 }
 #coffeeCover{
-    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/CoffeeCapstone/CoverCoffee.jpg");
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/CoffeeCapstone/coffeeBanner.jpg");
 }
 #conservCover{
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Conservatory/Conservatory+axon1.png");
@@ -56,7 +56,7 @@ h4,h5{
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/wrench.jpg");
 }
 #shelterCover{
-    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/ShelterCase/CoverShelter.jpg");
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/ShelterCase/ShelterBanner.jpg");
 }
 /*idk why you have to make these id's and not classes but its fiiiiine*/
 #hexCover,#carCover,#arcCover,#keyCover,#coffeeCover, #conservCover{
