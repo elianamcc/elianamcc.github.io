@@ -32,7 +32,7 @@
     opacity:0.7;
 }
 #hex{
-    background-image: url("../images/hex/hex-icon.png");
+    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Hexaplanter/hexBanner.jpg");
 }
 #car{
     background-image: url("../images/car/car-icon.png");
@@ -44,7 +44,7 @@
     background-image: url("../images/key/key-icon.png");
 }
 #coffee{
-    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/CoffeeCapstone/CoverCoffee.jpg")
+    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/CoffeeCapstone/coffeeBanner.jpg")
 }
 #conservatory{
     background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Conservatory/Conservatory+axon1.png")
@@ -53,7 +53,7 @@
     background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/wrench.jpg")
 }
 #shelter{
-    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Bionic+Wrench/wrench.jpg")
+    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/ShelterCase/ShelterBanner.jpg")
 }
 /*project name------------------------*/
 .project__link {
