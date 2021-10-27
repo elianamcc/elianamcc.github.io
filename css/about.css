@@ -31,7 +31,7 @@
 .picture{
     height: 75vh;
     width: 50%;
-    background-image: url("../images/about-eli.jpg");
+    background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/PXL_20210614_224532645.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
