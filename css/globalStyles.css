@@ -2,12 +2,58 @@
 /*                     ELEMENT STYLING
 /*-------------------------------------------------------*/
 
-html{
-    font-family: 'Playfair Display', serif;
-}
+html {
+    font-size: 16px !important;
+  }
+  @media screen and (min-width: 0px) {
+      html{
+          font-size: 1rem;
+      }
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  } 
 
-h1, h2{
-    margin: 0px;
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+
+  p {
+    font-size: 1rem;  
+    margin-bottom: 1rem;}
+
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  
+  h1 {
+    font-size: 3.052em;
+  }
+  
+  h2 {font-size: 2.441em;}
+  
+  h3 {font-size: 1.953em;}
+  
+  h4 {font-size: 1.563em;}
+  
+  h5 {font-size: 1.25em;}
+  
+  small, .text_small {font-size: 0.8em;}
+
+h1, h2, h4, h5{
+    margin: 0vw;
 }
 
 a{
@@ -29,16 +75,17 @@ a{
 .container{
     flex-direction: column;
     justify-content: center;
-    margin: 0px 5%;
+    margin: 0vw 5%;
 }
 
 .pageTitle{
-    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.052rem;
     font-weight: normal;
-    height: 150px;
+    height: 4rem;
     width: 100%;
-    margin-top: 70px;
-    letter-spacing: -0.05em;
+    margin-top: 5rem;
+    letter-spacing: 0px;
     flex-direction: column;
 }
 /*-------------------------------------------------------*/
@@ -47,7 +94,7 @@ a{
 .navbar{
     justify-content: flex-end;
     position: fixed;
-    height:70px;
+    height: 4rem;
     width:100%;
     z-index: 99;
     top:0px;
@@ -56,17 +103,19 @@ a{
 }
 
 .navbar__title{
-    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
     font-weight:lighter;
     position: fixed;
     left: 5%;
-    padding-left: 10px;
+    padding-left: .5rem;
 }
 
 .navbar__item{
-    font-size: 12px;
-    padding: 0px 15px;
-    letter-spacing: 0.15em;
+    font-family: 'Playfair Display', serif;
+    font-size: .9rem;
+    padding: 0rem 1.5rem;
+    letter-spacing: 0.15rem;
     color: rgb(182, 182, 182);
 }
 .navbar__item:hover{
@@ -82,22 +131,28 @@ a{
 /*-------------------------------------------------------*/
 .contact{
     flex-direction: column;
-    font-size: 18px;
-    height: 200px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    height: 6rem;
     width: 100%;
-    letter-spacing: -0.05em;
-    line-height: 1.9em;
+    letter-spacing: 0vw;
+    line-height: 1.2rem;
     background-color: rgb(44, 44, 44);
     color: rgb(182, 182, 182);
 }
 
 .contact__email{
-    font-family: Arial;
-    font-size: 12px;
-    margin-top: 10px;
-    letter-spacing: 0.05em;
+    font-family: "Roboto";
+    font-size: .75rem;
+    margin-top: .75rem;
+    letter-spacing: 0.1rem;
     color: rgb(182, 182, 182);
 }
 .contact__email:hover{
     color: white;
+}
+
+.internalLink{
+    color: red;
+    font-size: 1rem
 }

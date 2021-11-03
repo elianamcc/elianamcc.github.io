@@ -1,21 +1,14 @@
 /*-------------------------------------------------------*/
-/*                     ELEMENT STYLING
-/*-------------------------------------------------------*/
-h4,h5{
-    margin: 0;
-}
-
-/*-------------------------------------------------------*/
 /*                    UTILITY CLASSES
 /*-------------------------------------------------------*/
 .container{
     margin: 0px 10% !important;
 }
 .paddingLeft{
-    padding-left:50px;
+    padding-left:.5rem;
 }
 .paddingRight{
-    padding-right:50px;
+    padding-right:.5rem;
 }
 
 /*-------------------------------------------------------*/
@@ -25,9 +18,9 @@ h4,h5{
 /*styling for general project cover photos*/
 .projectCover{
     font-family: Inter, sans-serif;
-    height: 90vh;
+    height: 40rem;
     width: 100%;
-    margin-top: 70px;
+    margin-top: 0rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -77,19 +70,19 @@ h4,h5{
 }
 /*project title and subtitle*/
 .projectCover__title{
-    font-size: 50px;
+    font-weight: bold;
 }
 .projectCover__label{
-    font-size: 14px;
+    font-size: 0.8em;
     font-weight: bold;
 }
 .projectCover__value{
-    font-size: 16px;
+    font-size: 1em;
     font-weight: normal;
 }
 
 .projectCover__subtitle{
-    font-size: 35px;
+    font-size: 1.562em;
     letter-spacing: -0.05em;
     margin: 0px 0px 50px 10%;
 }
@@ -108,11 +101,10 @@ h4,h5{
     width: 40%;
 }
 .project__title{
-    font-size: 40px;
     color: #6b6b6b;
 }
 .project__subtitle{
-    font-size: 20px;
+    font-size: .75em;
     font-weight: normal;
     color: #a5a5a5;
 }
@@ -123,25 +115,11 @@ h4,h5{
     color: #4f4f4f;
 }
 .projectDescrip__header{
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .projectDescrip__body{
-    font-size: 16px;
+    font-size: 1rem ;
 }
-
-
-.project__descrip{
-    font-family: Arial;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.5em;
-    max-width: 600px;
-}
-.project__icon{
-    height: 60px;
-    width: 60px;
-}
-
 
 /*-------------------------------------------------------*/
 /*                   PROJECT CONTENT
@@ -163,7 +141,7 @@ section{
     align-items: flex-start;
 }
 .section__title{
-    font-size: 30px ;
+    font-size: 1.56em ;
     font-weight: 700;
 }
 
@@ -172,7 +150,7 @@ section{
     color: #4f4f4f;
 }
 .subsection__title{
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 700;
 }
 .subsection__body{
@@ -190,73 +168,6 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
-}
-
-/* HEXAPLANTER */
-#team{
-    background-image: url("../images/hex/team.jpeg");
-}
-#prototype{
-    background-image: url("../images/hex/hexmock2.PNG");
-}
-
-/* CONSTRUCT A CAR */
-#mission{
-    background-image: url("../images/car/mission.jpg");
-}
-#working{
-    background-image: url("../images/car/working.jpg");
-}
-
-/* ARCHITECTURE */
-#hotel{
-    background-size: contain;
-    background-image: url("../images/arc/hotel\ final\ model.jpg")
-}
-#inspo{
-    background-image: url("../images/arc/hotel\ sketch1.jpg")
-}
-#shape{
-    background-image: url("../images/arc/hotel\ model1.jpg")
-}
-#build{
-    background-image: url("../images/arc/hotel\ build.jpg")
-}
-
-/* RENDERING */
-#chair1{
-    background-image: url("../images/key/keyCover.jpg")
-}
-#chair2{
-    background-image: url("../images/key/Chair2\ \(1\).jpg")
-}
-#chair1:hover,#chair2:hover{
-    cursor: pointer;
-}
-#process{
-    min-height:500px;
-    margin: 10px 0;
-    background-image: url("../images/key/process.jpg")
-}
-
-/*EXPLANATION-----------------------------------------*/
-.main__info{
-    height: 100%;
-    width: 50%;
-}
-.main__info--title{
-    font-size: 20px;
-    letter-spacing: -0.05em;
-    line-height: 1.9em;
-    font-weight: normal;
-}
-.mainText{
-    color: #7a7a7a;
-    font-size: 16px;
-    font-family: "Roboto";
-    letter-spacing: 0.1em;
-    line-height: 2.0em;
-    display:inline-block;
 }
 
 /*HEX POSTER---------------------------------------------------*/
@@ -475,7 +386,7 @@ section{
     .itemRow,.main,.finalSketches__row{
         flex-direction: column;
     }
-    .item,.main__info,.main__pic,.finalSketches__item{
+    .item,.main__pic,.finalSketches__item{
         width: 100%;
         margin: 20px 0px;
     }
