@@ -3,10 +3,12 @@
 /*-------------------------------------------------------*/
 .intro{
     flex-direction: column;
-    align-items: flex-start;
-    height:75vh;
+    align-items: normal;
     width:50%;
     background-color: rgb(237, 237, 237);
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .intro__title{
@@ -29,7 +31,7 @@
 /*                 PICTURE (right box)
 /*-------------------------------------------------------*/
 .picture{
-    height: 75vh;
+    height: 50em;
     width: 50%;
     background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/PXL_20210614_224532645.jpg");
     background-repeat: no-repeat;
