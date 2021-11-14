@@ -109,6 +109,7 @@ a{
     position: fixed;
     left: 5%;
     padding-left: .5rem;
+    color: black;
 }
 
 .navbar__item{
@@ -153,6 +154,6 @@ a{
 }
 
 .internalLink{
-    color: red;
+    color: black;
     font-size: 1rem
 }
