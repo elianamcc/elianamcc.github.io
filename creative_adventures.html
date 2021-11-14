@@ -12,7 +12,7 @@
 <body>
 	<!-- NAVIGATION -->
 	<div class="navbar flexBox">
-		<h1 class="navbar__title">Eliana McComas</h1>
+		<h1 class="navbar__title" href="index.html">Eliana McComas</h1>
 		<a class="navbar__item" href="index.html">Home</a>
 		<a class="navbar__item" href="about.html">About</a>
 		<a class="navbar__item" href="projects.html">Projects</a>
@@ -28,7 +28,96 @@
 				possible. I appreciate exploring and learning different skills to help fuel my mind with inspiration
 				from a variety of sources. Please enjoy this selection of of some of my creative adventures!</p>
 		</div>
-		<div class="photoGrid flexBox">
+
+			<div class="gallery" id="gallery">
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_132536859-EFFECTS.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170716_161957560.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/20210916_135445.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/20210922_233026+(1).jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_160511987.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/oilpainting.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/keyshotChair.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/keyshotChair2.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_172631164.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170917_151958512_HDR.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/MetalSculpture.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170827_114118234_HDR.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20190304_012800_745.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180301_235329_936.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170716_160643378.jpg" alt=""></div>
+				</div>
+				<div class="gallery-item">
+					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_191457481.jpg" alt=""></div>
+				</div>
+			</div>
+
+		</html>
+
+		<script>
+			var gallery = document.querySelector('#gallery');
+			var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+			var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+			var resizeAll = function () {
+				var altura = getVal(gallery, 'grid-auto-rows');
+				var gap = getVal(gallery, 'grid-row-gap');
+				gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+					var el = item;
+					el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+				});
+			};
+			gallery.querySelectorAll('img').forEach(function (item) {
+				item.classList.add('byebye');
+				if (item.complete) {
+					console.log(item.src);
+				}
+				else {
+					item.addEventListener('load', function () {
+						var altura = getVal(gallery, 'grid-auto-rows');
+						var gap = getVal(gallery, 'grid-row-gap');
+						var gitem = item.parentElement.parentElement;
+						gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+						item.classList.remove('byebye');
+					});
+				}
+			});
+			window.addEventListener('resize', resizeAll);
+			gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+				item.addEventListener('click', function () {
+					item.classList.toggle('full');
+				});
+			});
+		</script>
+
+		<!-- <div class="photoGrid flexBox">
 			<img class="photoGrid__item"
 				src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_132536859-EFFECTS.jpg"
 				onclick="openModal();currentSlide(1)">
@@ -77,7 +166,7 @@
 			<img class="photoGrid__item"
 				src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_191457481.jpg"
 				onclick="openModal();currentSlide(16)">
-		</div>
+		</div> -->
 
 		<!-- CONTACT -->
 		<div class="contact flexBox">
