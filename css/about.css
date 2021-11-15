@@ -6,12 +6,13 @@
     align-items: normal;
     width:50%;
     background-color: rgb(237, 237, 237);
-    margin: 20px;
+    margin: 10px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
 .intro__title{
+    font: "Playfair Display", serif;
     font-size: 1.953em;
     margin: 0px 10% 5% 10%;
     letter-spacing: -0.05em;

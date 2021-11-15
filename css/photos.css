@@ -77,11 +77,10 @@
     filter: blur(4px);
   }
   70% {
-    max-width: 50%;
+    filter: blur(4px);
   }
   100% {
     max-width: 100%;
-    transform: rotate(0deg);
   }
 }
 @-webkit-keyframes zoomin {
@@ -93,11 +92,10 @@
     filter: blur(4px);
   }
   70% {
-    max-width: 50%;
+    filter: blur(4px);
   }
   100% {
     max-width: 100%;
-    transform: rotate(0deg);
   }
 }
 @-o-keyframes zoomin {
@@ -109,11 +107,10 @@
     filter: blur(4px);
   }
   70% {
-    max-width: 50%;
+    filter: blur(4px);
   }
   100% {
     max-width: 100%;
-    transform: rotate(0deg);
   }
 }
 @keyframes zoomin {
@@ -125,11 +122,10 @@
     filter: blur(4px);
   }
   70% {
-    max-width: 50%;
+    filter: blur(4px);
   }
   100% {
     max-width: 100%;
-    transform: rotate(0deg);
   }
 }
 
@@ -138,7 +134,7 @@
 
 .subTitle{
     font-size: 12px;
-    font-family: "Roboto Slab";
+    font-family: "Inter", sans-serif;
     font-weight: bolder;
     margin-top:15px;
     letter-spacing: 0em;
@@ -166,6 +162,11 @@
     padding-right:0px;
 }
 
+.subsection__body{
+    font-family: Inter, sans-serif;
+}
+
+
 @media screen and (max-width: 650px){
     .photoGrid__item:nth-child(odd){
         padding-left:0px;
@@ -177,7 +178,6 @@
         width:40%;
     }
   }
-
 
 /* MODAL */
 

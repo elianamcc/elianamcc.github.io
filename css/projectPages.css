@@ -221,6 +221,33 @@ img {vertical-align: middle;}
     height: 100%;
 }
 
+table{
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+td, th {
+    border: 1px solid #999;
+    padding: 0.25rem;
+    text-align: left;
+  }
+
+  td:nth-child(2) { opacity: 100% ; } 
+  td:nth-child(2) { background: hsl(92, 72%, 75%); }
+  td:nth-child(3) { background: hsl(6, 93%, 75%); }
+  td:nth-child(4) { background: hsl(34, 100%, 80%); }
+  td:nth-child(5) { background: hsl(105, 63%, 65%); }
+
+  tr:nth-child(2) { opacity: 80%; }
+  tr:nth-child(3) { opacity: 80%; }
+  tr:nth-child(4) { opacity: 80%; }
+  tr:nth-child(5) { opacity: 80%; }
+  tr:nth-child(6) { opacity: 80%; }
+  tr:nth-child(7) { opacity: 80%; }
+  tr:nth-child(8) { opacity: 80%; }
+  tr:nth-child(9) { opacity: 80%; }
+  tr:nth-child(10) { opacity: 80%; }
+  tr:nth-child(11) { font-weight: bold; }
 
 /*CAR COMPONENTS-------------------------------------------------*/
 .components{
