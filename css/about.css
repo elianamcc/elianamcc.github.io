@@ -7,7 +7,7 @@
     width:50%;
     background-color: rgb(237, 237, 237);
     margin: 10px;
-    padding-top: 50px;
+    padding-top: 5rem;
     padding-bottom: 50px;
 }
 
@@ -32,12 +32,13 @@
 /*                 PICTURE (right box)
 /*-------------------------------------------------------*/
 .picture{
-    height: 50em;
+    min-height: 40em;
     width: 50%;
     background-image: url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/PXL_20210614_224532645.jpg");
     background-repeat: no-repeat;
     background-size:cover;
 }
+
 
 /*-------------------------------------------------------*/
 /*                     RESPONSIVENESS

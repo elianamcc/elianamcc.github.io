@@ -134,7 +134,7 @@
 
 .subTitle{
     font-size: 12px;
-    font-family: "Inter", sans-serif;
+    font-family: "Roboto";
     font-weight: bolder;
     margin-top:15px;
     letter-spacing: 0em;
@@ -163,7 +163,14 @@
 }
 
 .subsection__body{
-    font-family: Inter, sans-serif;
+  font-family: "Roboto";
+  margin-top:15px;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  line-height: 150%;
+  color: rgb(122, 122, 122);
 }
 
 

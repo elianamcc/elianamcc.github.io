@@ -179,9 +179,9 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 30em;
-  max-height: 25em;
   position: relative;
   margin: auto;
+  padding-bottom: 2em;
 }
 
 /* Next & previous buttons */
