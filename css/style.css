@@ -83,6 +83,7 @@
 /*-------------------------------------------------------*/
 .projects{
     height: 60vh;
+    width: 100%;
     background-image: url("../images/yes.jpg");
     opacity: 0.75;
     color: white;
@@ -90,16 +91,12 @@
 }
 
 .projectsCaption{
-    flex-direction: column;
     position: absolute;
-    height: 100%;
-    width: 100%;
     text-align: center;
 }
 
 .projects__title{
     font-size: 34px;
-    margin-bottom: 10px;
     line-height: 0.9em;
     letter-spacing: 0.7em;
 }
@@ -113,19 +110,13 @@
     line-height: 2.2em;
 }
 
-.projects__button{
-    font-size: 12px;
-    padding:10px 20px;
-    border-radius: 20px;
-    letter-spacing: 0.05em;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-}
-.projects__button:hover{
+.projects__link{
     color: black;
-    background-color: white;
+    display: block;
+    height: 60vh;
+    width: 85vw;
 }
+
 
 
 /*-------------------------------------------------------*/
