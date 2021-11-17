@@ -194,6 +194,18 @@ section{
     width: 80%;
     padding: 1%;
 }
+.verticalImage{
+    height: 25vw;
+    padding: 1%;
+}
+.bigImage{
+    width: 100%;
+    padding: 1%;
+}
+.smolImage{
+    width: 60%;
+    padding: 1%;
+}
 
 /*PICTURES-----------------------------------------*/
 .main__pic{
@@ -284,7 +296,7 @@ td, th {
 .components{
     flex-direction: column;
     width: 100%;
-    margin: 70px 0 50px 0;
+    margin: 20px 0 20px 0;
 }
 .item,.item__info,.item__image{
     width: 50%;
@@ -320,7 +332,7 @@ td, th {
     background-image: url("../images/car/baseframe.jpg")
 }
 .item__info--title{
-    font-size: 13px;
+    font-size: 1vw;
     letter-spacing: -0.05em;
     line-height: 1.9em;
     margin-top: 0;
@@ -328,7 +340,7 @@ td, th {
 }
 .componentText{
     font-family: "Roboto Slab";
-    font-size: 11px;
+    font-size: .8vw;
     letter-spacing: 0.0em;
     line-height: 2.2em;
     display:inline-block;
