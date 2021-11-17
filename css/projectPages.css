@@ -18,13 +18,15 @@
 /*styling for general project cover photos*/
 .projectCover{
     font-family: Inter, sans-serif;
-    height: 40rem;
+    height: 40vw;
     width: 100%;
-    margin-top: 0rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
+
 
 /*styling for individual project cover photos*/
 #hexCover{
@@ -59,34 +61,68 @@
 }
 
 .projectCover__body{
-    height: 100%;
+    height: 40vw;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
 }
 .projectCover__container{
-    margin: 8% 0;
+    margin: 2vw 0;
 }
 /*project title and subtitle*/
 .projectCover__title{
     font-weight: bold;
 }
 .projectCover__label{
-    font-size: 0.8em;
+    font-size: 0.9vw;
     font-weight: bold;
 }
+
 .projectCover__value{
-    font-size: 1em;
+    font-size: 1vw;
     font-weight: normal;
 }
-
 .projectCover__subtitle{
-    font-size: 1.562em;
+    font-size: 1.562vw;
     letter-spacing: -0.05em;
     margin: 0px 0px 50px 10%;
 }
+@media screen and (min-width: 0px) {
+    .projectCover__container{
+        margin: 1em 0;
+    }
+    .projectCover__label{
+        font-size: 10px;
+    }
+    .projectCover__value{
+        font-size: 12px;
+    }
+}
 
+@media screen and (min-width: 320px) {
+    .projectCover__container{
+        margin: calc(10px + 4 * ((100vw - 320px) / 680)) 0;
+    }
+    .projectCover__label{
+        font-size: calc(10px + 4 * ((100vw - 320px) / 680));
+    }
+    .projectCover__value{
+        font-size: calc(12px + 5 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1250px) {
+    .projectCover__container{
+        margin: 2vw 0;
+    }
+    .projectCover__label{
+        font-size: 1vw;
+    }
+    .projectCover__value{
+        font-size: 1.25vw;
+    }
+  } 
 /*-------------------------------------------------------*/
 /*                   PROJECT INTRO
 /*-------------------------------------------------------*/
@@ -95,7 +131,6 @@
     display: flex;
     padding: 1% 0;
 }
-
 .projectNameContainer{
     padding-left: 5%;
     width: 40%;
@@ -108,7 +143,6 @@
     font-weight: normal;
     color: #a5a5a5;
 }
-
 .projectDescripContainer{
     padding: 1%;
     width: 60%;
@@ -144,7 +178,6 @@ section{
     font-size: 1.56em ;
     font-weight: 700;
 }
-
 .subsection{
     width: 65%;
     color: #4f4f4f;
@@ -156,7 +189,6 @@ section{
 .subsection__body{
     line-height: 200%;
 }
-
 .fullImage{
     width: 80%;
     padding: 1%;
@@ -225,7 +257,6 @@ table{
     border-collapse: collapse;
     margin-bottom: 2em;
 }
-
 td, th {
     border: 1px solid #999;
     padding: 0.25rem;
@@ -254,22 +285,18 @@ td, th {
     width: 100%;
     margin: 70px 0 50px 0;
 }
-
 .item,.item__info,.item__image{
     width: 50%;
 }
-
 .item{
     height: 100%;
     align-items: flex-start !important;
 }
-
 .itemRow{
     height:50%;
     width: 100%;
     margin: 20px 0;
 }
-
 .item__image{
     height:250px;
     width:250px;
@@ -291,8 +318,6 @@ td, th {
 #base{
     background-image: url("../images/car/baseframe.jpg")
 }
-
-
 .item__info--title{
     font-size: 13px;
     letter-spacing: -0.05em;
@@ -300,7 +325,6 @@ td, th {
     margin-top: 0;
     padding-left:20px;
 }
-
 .componentText{
     font-family: "Roboto Slab";
     font-size: 11px;
@@ -320,30 +344,29 @@ td, th {
     font-weight: normal;
     margin-top:20px;
 }
-
 .finalSketches__row > .finalSketches__item {
     padding: 0 8px;
-  }
+}
   
-  .finalSketches__row:after {
+.finalSketches__row:after {
     content: "";
     display: table;
     clear: both;
-  }
+}
   
-  .finalSketches__item {
+.finalSketches__item {
     width: 20%;
-  }
+}
 
 
    /*KEY RENDERINGS------------------------------------------------*/
-   #finalRenderings__title{
-        margin-bottom: 20px;
-    }
+#finalRenderings__title{
+    margin-bottom: 20px;
+}
 
 
    /*MODAL-------------------------------------------------*/
-  .modal {
+.modal {
     display: none;
     position: fixed;
     width: 100%;
@@ -354,47 +377,45 @@ td, th {
     z-index: 1;
     overflow: auto;
     background-color: black;
-  }
+}
   
-  .modal-content {
+.modal-content {
     position: relative;
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 0;
     background-color: #fefefe;
-  }
+}
   
-  /* CLOSE BUTTON */
-  .close {
+/* CLOSE BUTTON */
+.close {
     color: white;
     position: absolute;
     top: 90px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+.close:hover,
+.close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
+}
   
-  /*SLIDE CONTENT*/
-  .mySlides {
+/*SLIDE CONTENT*/
+.mySlides {
     display: none;
-  }
-
-  .mySlides--center{
+}
+.mySlides--center{
     width: 100%;
     background-color: black;
-  }
+}
 
    /* NEXT/PREV ARROWS */
-  .prev,
-  .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -406,49 +427,39 @@ td, th {
     font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
-  }
-  
-  .next {
+}
+.next {
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover,
-  .next:hover {
+}
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
-  }
+}
   
-   /* PICTURE NUMBER */
-  .numbertext {
+/* PICTURE NUMBER */
+.numbertext {
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
     color: black;
-  }
-  
-  img.demo {
+}
+img.demo {
     opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
+}
+.active,
+.demo:hover {
     opacity: 1;
-  }
-  
-  img.hover-shadow{
+}
+img.hover-shadow{
     transition: 0.3s;
     width: 100%;
-  }
-  
-  .hover-shadow:hover, #chair2:hover, #chair1:hover {
+}
+.hover-shadow:hover, #chair2:hover, #chair1:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: pointer;
-  }
-
-
-
-
+}
 
 @media screen and (max-width: 800px){
     .itemRow,.main,.finalSketches__row{
@@ -458,4 +469,4 @@ td, th {
         width: 100%;
         margin: 20px 0px;
     }
-  }
+}
