@@ -2,24 +2,34 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/photos.css">
 	<link rel="stylesheet" href="css/globalStyles.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">
-	<!-- NAVIGATION BAR -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<!-- NAVIGATION -->
-	<div class="navbar flexBox">
-		<a class="navbar__title" href="index.html">Eliana McComas</a>
-		<a class="navbar__item" href="index.html">Home</a>
-		<a class="navbar__item" href="about.html">About</a>
-		<a class="navbar__item" href="projects.html">Projects</a>
-		<a class="navbar__item navbar__item--last" href="creative_adventures.html">Creative Adventures</a>
-	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light flexBox">
+		<a class="navbar__title navbar-brand" href="#">Eliana McComas</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse navbar--collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="navbar__item nav-item nav-link active" href="index.html">Home</a>
+				<a class="navbar__item nav-item nav-link" href="about.html">About</a>
+				<a class="navbar__item nav-item nav-link" href="projects.html">Projects</a>
+				<a class="navbar__item nav-item nav-link" href="creative_adventures.html">Creative Adventures</a>
+			</div>
+		</div>
+	</nav>
 
-	<div class="container flexBox">
+	<div class="adventuresContainer flexBox">
 		<div class="pageTitle flexBox">
 			<div>Creative Adventures</div>
 			<p class="subsection__body">In my free time I enjoy expressing myself creatively in other ways! I view these
@@ -31,101 +41,143 @@
 		<br><br><br>
 
 
-			<div class="gallery" id="gallery">
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_132536859-EFFECTS.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170716_161957560.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/20210916_135445.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/20210922_233026+(1).jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_160511987.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/oilpainting.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/keyshotChair.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/keyshotChair2.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_172631164.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170917_151958512_HDR.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/MetalSculpture.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170827_114118234_HDR.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20190304_012800_745.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180301_235329_936.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170716_160643378.jpg" alt=""></div>
-				</div>
-				<div class="gallery-item">
-					<div class="content"><img src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_191457481.jpg" alt=""></div>
-				</div>
+		<div class="gallery" id="gallery">
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_132536859-EFFECTS.jpg"
+						alt=""></div>
 			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170716_161957560.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/20210916_135445.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/20210922_233026+(1).jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170715_160511987.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/oilpainting.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/keyshotChair.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/keyshotChair2.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_172631164.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170917_151958512_HDR.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/MetalSculpture.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170827_114118234_HDR.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20190304_012800_745.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180301_235329_936.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20170716_160643378.jpg"
+						alt=""></div>
+			</div>
+			<div class="gallery-item">
+				<div class="content"><img
+						src="https://portfolio-mccomas.s3.us-east-2.amazonaws.com/Personal+Art+Photos/IMG_20180618_191457481.jpg"
+						alt=""></div>
+			</div>
+		</div>
 
-		</html>
+</html>
 
-		<script>
-			var gallery = document.querySelector('#gallery');
-			var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-			var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-			var resizeAll = function () {
+<script>
+	var gallery = document.querySelector('#gallery');
+	var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+	var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+	var resizeAll = function () {
+		var altura = getVal(gallery, 'grid-auto-rows');
+		var gap = getVal(gallery, 'grid-row-gap');
+		gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+			var el = item;
+			el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+		});
+	};
+	gallery.querySelectorAll('img').forEach(function (item) {
+		item.classList.add('byebye');
+		if (item.complete) {
+			console.log(item.src);
+		}
+		else {
+			item.addEventListener('load', function () {
 				var altura = getVal(gallery, 'grid-auto-rows');
 				var gap = getVal(gallery, 'grid-row-gap');
-				gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-					var el = item;
-					el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-				});
-			};
-			gallery.querySelectorAll('img').forEach(function (item) {
-				item.classList.add('byebye');
-				if (item.complete) {
-					console.log(item.src);
-				}
-				else {
-					item.addEventListener('load', function () {
-						var altura = getVal(gallery, 'grid-auto-rows');
-						var gap = getVal(gallery, 'grid-row-gap');
-						var gitem = item.parentElement.parentElement;
-						gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-						item.classList.remove('byebye');
-					});
-				}
+				var gitem = item.parentElement.parentElement;
+				gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+				item.classList.remove('byebye');
 			});
-			window.addEventListener('resize', resizeAll);
-			gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-				item.addEventListener('click', function () {
-					item.classList.toggle('full');
-				});
-			});
-		</script>
+		}
+	});
+	window.addEventListener('resize', resizeAll);
+	gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+		item.addEventListener('click', function () {
+			item.classList.toggle('full');
+		});
+	});
+</script>
 
-		<!-- CONTACT -->
-		<div class="contact flexBox">
-			<span class="contact__title">Contact</span>
-			<a class="contact__email"
-				href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
-		</div>
-	</div>
+<!-- CONTACT -->
+<div class="contact flexBox">
+	<span class="contact__title">Contact</span>
+	<a class="contact__email"
+		href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
 
 </body>
 <script src="modal.js"></script>

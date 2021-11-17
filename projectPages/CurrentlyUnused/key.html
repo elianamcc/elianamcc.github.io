@@ -1,107 +1,140 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="../css/projectPages.css">
-        <link rel="stylesheet" href="../css/globalStyles.css">
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">        <!-- NAVIGATION BAR -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <!-- NAVIGATION -->
-        <div class="navbar flexBox">
-            <a class="navbar__title" href="index.html">Eliana McComas</a>
-            <a class="navbar__item" href="../index.html">Home</a>
-            <a class="navbar__item" href="../about.html">About</a>
-            <a class="navbar__item" href="../projects.html">Projects</a>
-            <a class="navbar__item navbar__item--last" href="../creative_adventures.html">Creative Adventures</a>
-        </div>
 
-        <!-- PROJECT COVER -->
-        <div class="projectCover" id="keyCover">
-            <div class="projectCover__body">
-                <div class="projectCover__container">
-                    <h1 class="projectCover__title">Keyshot Rendering</h1>
-                </div>
-                <div class="projectCover__container">
-                    <h2 class="projectCover__label">Role</h2>
-                    <h2 class="projectCover__value">Designer</h2>
-                </div>
-                <div class="projectCover__container">
-                    <h2 class="projectCover__label">Duration</h2>
-                    <h2 class="projectCover__value">September 2017 - June 2017</h2>
-                </div>
-                <div class="projectCover__container">
-                    <h2 class="projectCover__label">Tools</h2>
-                    <h2 class="projectCover__value">Keyshot, Adobe Photoshop</h2>
-                </div>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/projectPages.css">
+    <link rel="stylesheet" href="../css/globalStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:300&display=swap" rel="stylesheet">
+    <!-- NAVIGATION BAR -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light flexBox">
+        <a class="navbar__title navbar-brand" href="#">Eliana McComas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar--collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="navbar__item nav-item nav-link active" href="index.html">Home</a>
+                <a class="navbar__item nav-item nav-link" href="about.html">About</a>
+                <a class="navbar__item nav-item nav-link" href="projects.html">Projects</a>
+                <a class="navbar__item nav-item nav-link" href="creative_adventures.html">Creative Adventures</a>
             </div>
         </div>
+    </nav>
 
-        <div class="container">
-            <!-- PROJECT INTRODUCTION -->
-            <div class="project__info">
-                <div class="projectNameContainer">
-                    <h3 class="project__title">KEYSHOT</h3>
-                    <h3 class="project__subtitle">A Personal Project</h3>
-                </div>
-                <div class="projectDescripContainer">
-                    <p class="projectDescrip__header">is a rendering program that I learned for a Northwestern class. </p>
-                    <p class="projectDescrip__body">Our final assignment was to choose a model of any product and produce two renderings of it using KeyShot and Adobe Photoshop for post-editing. I decided to model a chair due to the commonality of the product, since I thought it would be easier to judge the quality of my renderings by how believable they are. I produced two images- one with the chair in a studio environment with minimal background, and the other with the chair in a home environment with more background noise in order to explore different environments and lighting solutions.</p>
-                </div>
+    <!-- PROJECT COVER -->
+    <div class="projectCover" id="keyCover">
+        <div class="projectCover__body">
+            <div class="projectCover__container">
+                <h1 class="projectCover__title">Keyshot Rendering</h1>
             </div>
-
-            <h1 class="finalSketches__title" id="finalRenderings__title">FINAL RENDERINGS</h1>
-            <!-- PROJECT CONTENT -->
-            <div class="main flexBox">
-                <div class="main__pic" id="chair1" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
-                <div class="main__pic" id="chair2" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Role</h2>
+                <h2 class="projectCover__value">Designer</h2>
             </div>
-            <div class="main flexBox">
-                <div class="main__info">
-                    <h4 class="main__info--title paddingRight">process</h4>
-                    <p class="mainText paddingRight">Since this project was very open-ended I was able to determine many parameters myself. My goal was to create a believable model that could be placed in two very different environments in order to show mastery of the Keyshot program. I was inspired by this rendering by keyshot influencer Esben Oxholm, and wanted especially to replicate the believability of the materials.</p>
-                </div>
-                <div class="main__pic" id="process"></div>
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Duration</h2>
+                <h2 class="projectCover__value">September 2017 - June 2017</h2>
             </div>
-            
-
+            <div class="projectCover__container">
+                <h2 class="projectCover__label">Tools</h2>
+                <h2 class="projectCover__value">Keyshot, Adobe Photoshop</h2>
+            </div>
         </div>
-              
-        <!-- The Modal/Lightbox -->
-        <div id="myModal" class="modal">
+    </div>
+
+    <div class="container">
+        <!-- PROJECT INTRODUCTION -->
+        <div class="project__info">
+            <div class="projectNameContainer">
+                <h3 class="project__title">KEYSHOT</h3>
+                <h3 class="project__subtitle">A Personal Project</h3>
+            </div>
+            <div class="projectDescripContainer">
+                <p class="projectDescrip__header">is a rendering program that I learned for a Northwestern class. </p>
+                <p class="projectDescrip__body">Our final assignment was to choose a model of any product and produce
+                    two renderings of it using KeyShot and Adobe Photoshop for post-editing. I decided to model a chair
+                    due to the commonality of the product, since I thought it would be easier to judge the quality of my
+                    renderings by how believable they are. I produced two images- one with the chair in a studio
+                    environment with minimal background, and the other with the chair in a home environment with more
+                    background noise in order to explore different environments and lighting solutions.</p>
+            </div>
+        </div>
+
+        <h1 class="finalSketches__title" id="finalRenderings__title">FINAL RENDERINGS</h1>
+        <!-- PROJECT CONTENT -->
+        <div class="main flexBox">
+            <div class="main__pic" id="chair1" onclick="openModal();currentSlide(1)" class="hover-shadow"></div>
+            <div class="main__pic" id="chair2" onclick="openModal();currentSlide(2)" class="hover-shadow"></div>
+        </div>
+        <div class="main flexBox">
+            <div class="main__info">
+                <h4 class="main__info--title paddingRight">process</h4>
+                <p class="mainText paddingRight">Since this project was very open-ended I was able to determine many
+                    parameters myself. My goal was to create a believable model that could be placed in two very
+                    different environments in order to show mastery of the Keyshot program. I was inspired by this
+                    rendering by keyshot influencer Esben Oxholm, and wanted especially to replicate the believability
+                    of the materials.</p>
+            </div>
+            <div class="main__pic" id="process"></div>
+        </div>
+
+
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
-        
+
             <div class="mySlides mySlides--center">
                 <div class="flexBox">
                     <div class="numbertext">1 / 2</div>
                     <img src="../images/key/keyCover.jpg" style="height:100%">
                 </div>
             </div>
-        
+
             <div class="mySlides mySlides--center">
                 <div class="flexBox">
                     <div class="numbertext">2 / 2</div>
                     <img src="../images/key/Chair2 (1).jpg" style="height:100%">
                 </div>
             </div>
-            
-                <!-- Next/previous controls -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            
-            </div>
-            </div>
-        <!-- CONTACT -->
-        <div class="container">
-            <div class="contact flexBox">
-                <span class="contact__title">Contact</span>
-                <a class="contact__email" href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
-            </div>
-        </div>
 
-    </body>
-    <script src="../modal.js"></script>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="container">
+        <div class="contact flexBox">
+            <span class="contact__title">Contact</span>
+            <a class="contact__email"
+                href="mailto:elianamccomas2021@u.northwestern.edu">elianamccomas2021@u.northwestern.edu</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+<script src="../modal.js"></script>
+
 </html>

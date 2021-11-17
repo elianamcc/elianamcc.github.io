@@ -52,7 +52,7 @@
     background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), url("https://portfolio-mccomas.s3.us-east-2.amazonaws.com/ShelterCase/ShelterBanner6.jpg");
 }
 /*idk why you have to make these id's and not classes but its fiiiiine*/
-#hexCover,#carCover,#arcCover,#keyCover,#coffeeCover, #conservCover{
+#hexCover,#carCover,#arcCover,#keyCover,#coffeeCover, #conservCover, #wrenchCover{
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center; 

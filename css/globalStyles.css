@@ -65,7 +65,7 @@ a{
 /*-------------------------------------------------------*/
 .flexBox{
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
     align-items: center;
 }
 .flexColumn{
@@ -75,7 +75,10 @@ a{
 .container{
     flex-direction: column;
     justify-content: center;
-    margin: 0vw 5%;
+    margin: 0 5%;
+}
+.container--noMargin{
+  margin: 0 !important;
 }
 
 .pageTitle{
@@ -92,23 +95,21 @@ a{
 /*                   NAVIGATION BAR
 /*-------------------------------------------------------*/
 .navbar{
-    justify-content: flex-end;
+    justify-content: flex-end !important;
     position: fixed;
     height: 4rem;
     width:100%;
     z-index: 99;
     top:0px;
     left:0px;
-    background-color: white;
+    background-color: white !important;
+    padding: 0 5%;
 }
 
 .navbar__title{
     font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
     font-weight:lighter;
-    position: fixed;
-    left: 5%;
-    padding-left: .5rem;
     color: black;
 }
 
@@ -118,6 +119,8 @@ a{
     padding: 0rem 1rem;
     letter-spacing: 0.15rem;
     color: rgb(182, 182, 182);
+    background-color:white;
+    padding: 15px !important;
 }
 .navbar__item:hover{
     color: black;
@@ -126,7 +129,16 @@ a{
     padding-right: 5% !important;
 }
 
+.navbar--collapse{
+  display: flex;
+  justify-content: flex-end;
+}
 
+.adventuresContainer{
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5%;
+}
 /*-------------------------------------------------------*/
 /*                   CONTACT FOOTER
 /*-------------------------------------------------------*/
