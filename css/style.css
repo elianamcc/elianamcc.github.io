@@ -99,22 +99,15 @@
     font-size: 34px;
     line-height: 0.9em;
     letter-spacing: 0.7em;
-}
-
-.projects__info{
-    font-family: "Roboto Slab";
-    font-size: 12px;
-    min-width:200px;
-    margin:20px 25%;
-    letter-spacing: 0.0em;
-    line-height: 2.2em;
+    text-align: center;
 }
 
 .projects__link{
     color: black;
     display: block;
     height: 60vh;
-    width: 85vw;
+    text-align: center;
+
 }
 
 
